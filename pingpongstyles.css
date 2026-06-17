@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  background: linear-gradient(135deg, #1e2a78, #3b46d1);
+  color: white;
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle geometric vibe like screenshot */
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: rgba(120, 200, 50, 0.15);
+  transform: rotate(45deg);
+  top: 40%;
+  left: -50px;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  font-size: 14px;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+.menu {
+  opacity: 0.9;
+}
+
+/* HERO CONTENT */
+.hero-content {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.cta {
+  background: #4f5dff;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #6873ff;
+}
+
+/* INFO SECTION */
+.info {
+  background: #f3f3f3;
+  padding: 60px 40px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e2a78;
+  color: white;
+}
